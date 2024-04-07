@@ -1,115 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./style.css"/>
-		<link rel="stylesheet" href="./projects.css"/>
- 		<title>Yash's Portfolio</title>
+<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
+<html lang="en"> <!-- Starts the HTML document with English as the language -->
+	<head> <!-- Head section containing metadata and links to external resources -->
+		<meta charset="UTF-8" /> <!-- Sets the character encoding to UTF-8 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Sets the compatibility for Internet Explorer -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Sets the viewport for responsive design -->
+		<meta name="description" content="Yash Patel Portfolio"> <!-- Provides a description for search engines -->
+		<meta name="keywords" content="Yash Patel"> <!-- Provides keywords for search engines -->
+		<meta name="author" content="Yash Patel"> <!-- Specifies the author of the document -->
+		<link rel="stylesheet" href="./style.css"/> <!-- Links to an external stylesheet for styling -->
+		<link rel="stylesheet" href="./projects.css"/> <!-- Links to another external stylesheet for specific styling -->
+ 		<title>Yash's Portfolio</title> <!-- Sets the title of the HTML document -->
 		
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
-		<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Links to external fonts and stylesheets -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" /> <!-- Preconnects to Google Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <!-- Preconnects to Google Fonts with crossorigin attribute -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet" /> <!-- Links to Google Fonts -->
+		<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css"> <!-- Links to a Tailwind CSS file -->
+		<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"> <!-- Links to Font Awesome CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Links to Font Awesome CSS -->
 		
 	</head>
-	<body>
-		<div id="opening-content">
-			<nav>
-				<h1 class="logo">personalportfolio.</h1>
+	<body> <!-- Body section containing the main content of the HTML document -->
+		<div id="opening-content"> <!-- Opening content section -->
+			<nav> <!-- Navigation section -->
+				<h1 class="logo">personalportfolio.</h1> <!-- Logo for the website -->
 			</nav>
-			<section class="hero-section">
+			<section class="hero-section"> <!-- Hero section of the website -->
 				<img
 					src="./assets/IMG_3183.jpg"
 					class="hero-img"
 					alt="glacier national park vally"
-				/>
-				<h1 class="cta">
-					<div class="cta-text">
-						<div><span class="cta-1">I'm</span></div>
-						<div><span class="cta-2">Yash</span></div>
-						<div><span class="cta-3">Patel.</span></div>
+				/> <!-- Hero image with an alt attribute -->
+				<h1 class="cta"> <!-- Call-to-action heading -->
+					<div class="cta-text"> <!-- Text for call-to-action -->
+						<div><span class="cta-1">I'm</span></div> <!-- Text part 1 -->
+						<div><span class="cta-2">Yash</span></div> <!-- Text part 2 -->
+						<div><span class="cta-3">Patel.</span></div> <!-- Text part 3 -->
 					</div>
-					<div class="cta-text">
-						<div><span class="cta-4">Student.</span></div>
-						<div><span class="cta-5">Developer.</span></div>
-						<div><span class="cta-6">Thinker.</span></div>
+					<div class="cta-text"> <!-- Additional text for call-to-action -->
+						<div><span class="cta-4">Student.</span></div> <!-- Text part 4 -->
+						<div><span class="cta-5">Developer.</span></div> <!-- Text part 5 -->
+						<div><span class="cta-6">Thinker.</span></div> <!-- Text part 6 -->
 					</div>
-					<button id="learn-more-btn" onclick="toggleContent()" class="cta-btn faint-bg">Learn more</button>
+					<button id="learn-more-btn" onclick="toggleContent()" class="cta-btn faint-bg">Learn more</button> <!-- Learn more button -->
 				</h1>
-				<h3 class="pic-claim">i took this picture</h3>
+				<h3 class="pic-claim">i took this picture</h3> <!-- Image claim or caption -->
 			</section>
 		</div>
 
-		<section id="main-content" style="display: none;">
-			<main class="profile-page">
-				<section class="relative block h-500-px">
+		<section id="main-content" style="display: none;"> <!-- Main content section -->
+			<main class="profile-page"> <!-- Profile page content -->
+				<section class="relative block h-500-px"> <!-- Relative block with specified height -->
 				  <div class="fade-img absolute top-0 w-full h-full bg-center bg-cover" style="
 						  background-image: url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2710&amp;q=80');">
-					<span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+					<span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span> <!-- Black overlay -->
 				  </div>
 				</section>
-				<section class="relative py-16 bg-blueGray-200">
-					<div class="container mx-auto px-4">
-						<div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
-							<div class="px-6">
-								<div class="flex flex-wrap justify-center">
-								<div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
-									<div class="justify-center">
-										<br>
-										<br>
-										<img alt="..." src="assets/profile.png" style="width: 90%; height: 70%; border-radius: 90%;">									
+				<section class="relative py-16 bg-blueGray-200"> <!-- Relative section with background color -->
+					<div class="container mx-auto px-4"> <!-- Container for content -->
+						<div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"> <!-- Relative flex container -->
+							<div class="px-6"> <!-- Padding around content -->
+								<div class="flex flex-wrap justify-center"> <!-- Flex container for alignment -->
+								<div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center"> <!-- Width and order settings for columns -->
+									<div class="justify-center"> <!-- Justify content center -->
+										<br> <!-- Line break -->
+										<br> <!-- Line break -->
+										<img alt="..." src="assets/profile.png" style="width: 90%; height: 70%; border-radius: 90%;"> <!-- Profile picture -->
 									</div>
 								</div>
-								<div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
-									<div class="py-6 px-3 mt-32 sm:mt-0">
+								<div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center"> <!-- Width and order settings for columns -->
+									<div class="py-6 px-3 mt-32 sm:mt-0"> <!-- Padding and margin settings -->
 									<button class="resume-btn uppercase font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150" type="button" onclick="openResume()">
-										Resume
+											Resume <!-- Resume button -->
 									</button>
 									</div>
 								</div>
-								<div class="w-full lg:w-4/12 px-4 lg:order-1">
-									<div class="flex justify-center py-4 lg:pt-4 pt-8">
-										<div class="middle">
-											<a class="btn" href="https://github.com/yash17p" target="_blank">
-												<i class="fa fa-github"></i>
+								<div class="w-full lg:w-4/12 px-4 lg:order-1"> <!-- Width and order settings for columns -->
+									<div class="flex justify-center py-4 lg:pt-4 pt-8"> <!-- Flex container for alignment -->
+										<div class="middle"> <!-- Center alignment -->
+											<a class="btn" href="https://github.com/yash17p" target="_blank"> <!-- GitHub link -->
+												<i class="fa fa-github"></i> <!-- GitHub icon -->
 											</a>
-											<a class="btn" href="https://www.linkedin.com/in/yashpatel1708/" target="_blank">
-												<i class="fa fa-linkedin"></i>
+											<a class="btn" href="https://www.linkedin.com/in/yashpatel1708/" target="_blank"> <!-- LinkedIn link -->
+												<i class="fa fa-linkedin"></i> <!-- LinkedIn icon -->
 											</a>
-											<a class="btn" href="https://www.instagram.com/yash.patell17/" target="_blank">
-												<i class="fa fa-instagram"></i>
+											<a class="btn" href="https://www.instagram.com/yash.patell17/" target="_blank"> <!-- Instagram link -->
+												<i class="fa fa-instagram"></i> <!-- Instagram icon -->
 											</a>
 										</div>
 									</div>
 								</div>
 								</div>
-								<div class="text-center mt-12" style="margin-top: 0;">
+								<div class="text-center mt-12" style="margin-top: 0;"> <!-- Text center alignment -->
 								<h3 class="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-									Yash Patel
+									Yash Patel <!-- Name heading -->
 								</h3>
 								<div class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
 									<i class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
-									Toronto, Canada
+									Toronto, Canada <!-- Location -->
 								</div>
 								<div class="mb-2 text-blueGray-600 mt-10">
-									<i class="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>Software Developer
+									<i class="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>Software Developer <!-- Job title -->
 								</div>
 								<div class="mb-2 text-blueGray-600">
-									<i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>Information Technology & Computer Science | Toronto Metropolitan University
+									<i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>Information Technology & Computer Science | Toronto Metropolitan University <!-- Education -->
 								</div>
 								</div>
-								<div class="mt-10 py-10 border-t border-blueGray-200 text-center">
-								<div class="flex flex-wrap justify-center">
-									<div class="w-full lg:w-9/12 px-4">
+								<div class="mt-10 py-10 border-t border-blueGray-200 text-center"> <!-- Top margin, padding, and border -->
+								<div class="flex flex-wrap justify-center"> <!-- Flex container for alignment -->
+									<div class="w-full lg:w-9/12 px-4"> <!-- Width settings for columns -->
 									<p class="mb-4 text-lg leading-relaxed text-blueGray-700">
-										I'm an 21-year-old Software Developer who's been coding for 6.5 years with 3 years of professional experience. I've raised thousands in venture funding, been in some of the largest tech publications, and taken part in world-class accelerators.
+										I'm an 21-year-old Software Developer who's been coding for 6.5 years with 3 years of professional experience. <!-- Description -->
 										<br>
 										<br>
 										I'm always looking for new challenges to lend a helping hand with and meet new people - feel free to reach out anytime through my socials above!
@@ -120,10 +121,10 @@
 						</div>
 					</div>
 
-					<div class="text-center mt-12">
-						<br>
-						<h1 class="section-title font-semibold leading-normal mb-2 text-blueGray-700 mb-2">My Projects</h1>
-						<br>
+					<div class="text-center mt-12"> <!-- Text center alignment -->
+						<br> <!-- Line break -->
+						<h1 class="section-title font-semibold leading-normal mb-2 text-blueGray-700 mb-2">My Projects</h1> <!-- Section title -->
+						<br> <!-- Line break -->
 					</div>
 
 					<article class="postcard dark orange">
@@ -131,17 +132,18 @@
 							<img class="postcard__img" src="assets/promptopia.png" alt="Promptopia website picture" />
 						</a>
 						<div class="postcard__text">
-							<h1 class="postcard__title blue">Promptopia</h1>
+							<h1 class="postcard__title blue">Promptopia</h1> <!-- Project title -->
 							<div class="postcard__subtitle small">
 								<time datetime="2023-12-27 12:00:00">
-									<i class="fas fa-calendar-alt mr-2"></i>Wed, Dec 27th 2023
+									<i class="fas fa-calendar-alt mr-2"></i>Wed, Dec 27th 2023 <!-- Date -->
 								</time>
 							</div>
-							<div class="postcard__bar"></div>
-							<div class="postcard__preview-txt">Promptopia is an open-source fullstack (CRUD) based Next.js app which provides users with the ability to discover, create, and share creative AI prompts to inspire their writing, brainstorming sessions, and creative projects when using AI.
+							<div class="postcard__bar"></div> <!-- Horizontal bar -->
+							<div class="postcard__preview-txt"> <!-- Project description -->
+								Promptopia is an open-source fullstack (CRUD) based Next.js app which provides users with the ability to discover, create, and share creative AI prompts to inspire their writing, brainstorming sessions, and creative projects when using AI.
 								I built Promptopia using Next.js for both the frontend and backend, and utilized MongoDB as the database. The authentication system was implemented using NextAuth.js and used tailwindcss for styling.
 								
-							<ul class="postcard__tagbox">
+							<ul class="postcard__tagbox"> <!-- Tag box for project technologies -->
 								<li class="tag__item"><i class="fas fa-code mr-2"></i>Next.js 14</li>
 								<li class="tag__item"><i class="fas fa-code mr-2"></i>Javascript/TypeScript</li>
 								<li class="tag__item"><i class="fas fa-code mr-2"></i>MongoDB</li>
@@ -158,17 +160,19 @@
 							<img class="postcard__img" src="assets/movieland landing page.png" alt="Movieland landing page" />
 						</a>
 						<div class="postcard__text">
-							<h1 class="postcard__title green">Movieland</h1>
+							<h1 class="postcard__title green">Movieland</h1> <!-- Project title -->
 							<div class="postcard__subtitle small">
 								<time datetime="2022-05-22 12:00:00">
-									<i class="fas fa-calendar-alt mr-2"></i>Mon, May 22th 2022
+									<i class="fas fa-calendar-alt mr-2"></i>Mon, May 22th 2022 <!-- Date -->
 								</time>
 							</div>
-							<div class="postcard__bar"></div>
-							<div class="postcard__preview-txt">Movieland is an api based beginner online video streaming platform allowing users to search for movies,
-								and display the results. Movieland was built by utilizing the efficiency of React, and it offers a seamless experience as it was deployed with Docker and hosted on the reliable Heroku platform. </div>
+							<div class="postcard__bar"></div> <!-- Horizontal bar -->
+							<div class="postcard__preview-txt"> <!-- Project description -->
+								Movieland is an api based beginner online video streaming platform allowing users to search for movies,
+								and display the results. Movieland was built by utilizing the efficiency of React, and it offers a seamless experience as it was deployed with Docker and hosted on the reliable Heroku platform.
+							</div>
 								
-							<ul class="postcard__tagbox">
+							<ul class="postcard__tagbox"> <!-- Tag box for project technologies -->
 								<li class="tag__item"><i class="fas fa-code mr-2"></i>React</li>
 								<li class="tag__item"><i class="fas fa-code mr-2"></i>Javascript</li>
 								<li class="tag__item"><i class="fas fa-code mr-2"></i>HTML/CSS</li>
@@ -185,17 +189,19 @@
 							<img class="postcard__img" src="assets/storyteller.png" alt="Image Title" />
 						</a>
 						<div class="postcard__text">
-							<h1 class="postcard__title red">Storyteller</h1>
+							<h1 class="postcard__title red">Storyteller</h1> <!-- Project title -->
 							<div class="postcard__subtitle small">
 								<time datetime="2022-05-22 12:00:00">
-									<i class="fas fa-calendar-alt mr-2"></i>Sat, Feb 19th 2022
+									<i class="fas fa-calendar-alt mr-2"></i>Sat, Feb 19th 2022 <!-- Date -->
 								</time>
 							</div>
-							<div class="postcard__bar"></div>
-							<div class="postcard__preview-txt">Storyteller is a CYOA app designed for awareness by letting users explore critical global issues interactively. A compelling series of narratives that not only entertains users while they are making informed choices that contribute to a better understanding of the world and its issues. 
-								Uncover hidden details and plot twists through interactive blurred and redacted text.</div>
+							<div class="postcard__bar"></div> <!-- Horizontal bar -->
+							<div class="postcard__preview-txt"> <!-- Project description -->
+								Storyteller is a CYOA app designed for awareness by letting users explore critical global issues interactively. A compelling series of narratives that not only entertains users while they are making informed choices that contribute to a better understanding of the world and its issues. 
+								Uncover hidden details and plot twists through interactive blurred and redacted text.
+							</div>
 								
-							<ul class="postcard__tagbox">
+							<ul class="postcard__tagbox"> <!-- Tag box for project technologies -->
 								<li class="tag__item"><i class="fas fa-code mr-2"></i>Native React</li>
 								<li class="tag__item"><i class="fas fa-code mr-2"></i>Node.js with Express</li>
 								<li class="tag__item"><i class="fas fa-code mr-2"></i>MongoDB</li>
@@ -206,12 +212,12 @@
 						</div>
 					</article>
 
-					<footer class="relative bg-blueGray-200 pt-8 pb-6 mt-8">
-						<div class="container mx-auto px-4">
-						<div class="flex flex-wrap items-center md:justify-between justify-center">
-							<div class="w-full md:w-6/12 px-4 mx-auto text-center">
-							<div class="text-sm text-blueGray-500 font-semibold py-1">
-								© Yash Patel 2024</a>.
+					<footer class="relative bg-blueGray-200 pt-8 pb-6 mt-8"> <!-- Footer section -->
+						<div class="container mx-auto px-4"> <!-- Container for content -->
+						<div class="flex flex-wrap items-center md:justify-between justify-center"> <!-- Flex container for alignment -->
+							<div class="w-full md:w-6/12 px-4 mx-auto text-center"> <!-- Width settings for columns -->
+							<div class="text-sm text-blueGray-500 font-semibold py-1"> <!-- Text settings -->
+								© Yash Patel 2024</a>. <!-- Copyright text -->
 							</div>
 							</div>
 						</div>
@@ -221,12 +227,8 @@
 			</main>
 		</section>
 
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
-			integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
-		<script src="./app.js"></script>
+		<!-- Scripts for animations and functionality -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="./app.js"></script> <!-- Link to JavaScript file -->
 	</body>
 </html>
