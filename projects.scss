@@ -1,4 +1,7 @@
+/* Importing the Baloo 2 font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
+/* Default color variables */
 $main-green: #79dd09 !default;
 $main-green-rgb-015: rgba(121, 221, 9, 0.1) !default;
 $main-yellow: #bdbb49 !default;
@@ -8,7 +11,7 @@ $main-red-rgb-015: rgba(189, 21, 11, 0.1) !default;
 $main-blue: #0076bd !default;
 $main-blue-rgb-015: rgba(0, 118, 189, 0.1) !default;
 
-/* This pen */
+/* Global styles for the entire page */
 body {
 	font-family: "Baloo 2", cursive;
 	font-size: 16px;
@@ -17,19 +20,23 @@ body {
 	font-weight: initial;
 }
 
+/* Dark mode */
 .dark {
 	background: #f3f5f7;
 }
 
+/* Light mode */
 .light {
 	background: #f3f5f7;
 }
 
+/* Styling for links */
 a, a:hover {
 	text-decoration: none;
 	transition: color 0.3s ease-in-out;
 }
 
+/* Styling for the page header title */
 #pageHeaderTitle {
 	margin: 2rem 0;
 	text-transform: uppercase;
@@ -49,13 +56,17 @@ a, a:hover {
   position: relative;
   color: #ffffff;
 
+	/* Dark mode background */
 	&.dark {
 		background-color: #18151f;
 	}
+
+	/* Light mode background */
 	&.light {
 		background-color: #e1e5ea;
 	}
 	
+	/* Dark mode text color */
 	.t-dark {
 		color: #18151f;
 	}
@@ -74,10 +85,12 @@ a, a:hover {
 		font-size: 80%;
 	}
 
+  /* Styling for postcard title */
   .postcard__title {
     font-size: 1.75rem;
   }
 
+  /* Styling for postcard image */
   .postcard__img {
     max-height: 180px;
     width: 100%;
@@ -85,10 +98,12 @@ a, a:hover {
     position: relative;
   }
 
+  /* Styling for postcard image link */
   .postcard__img_link {
     display: contents;
   }
 
+  /* Styling for postcard bar */
   .postcard__bar {
     width: 50px;
     height: 10px;
@@ -98,6 +113,7 @@ a, a:hover {
     transition: width 0.2s ease;
   }
 
+  /* Styling for postcard text */
   .postcard__text {
     padding: 1.5rem;
     position: relative;
@@ -105,6 +121,7 @@ a, a:hover {
     flex-direction: column;
   }
 
+  /* Styling for postcard preview text */
   .postcard__preview-txt {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -112,6 +129,7 @@ a, a:hover {
     height: 100%;
   }
 
+  /* Styling for postcard tag box */
   .postcard__tagbox {
     display: flex;
     flex-flow: row wrap;
@@ -120,6 +138,7 @@ a, a:hover {
 		padding: 0;
     justify-content: center;
 
+    /* Styling for tag items */
     .tag__item {
       display: inline-block;
       background: rgba(83, 83, 83, 0.4);
@@ -136,6 +155,7 @@ a, a:hover {
     }
   }
 
+  /* Pseudo-element styling */
   &:before {
     content: "";
     position: absolute;
@@ -148,11 +168,13 @@ a, a:hover {
     border-radius: 10px;
   }
 
+  /* Hover effect for postcard bar */
   &:hover .postcard__bar {
     width: 100px;
   }
 }
 
+/* Media query for larger screens */
 @media screen and (min-width: 769px) {
   .postcard {
     flex-wrap: inherit;
@@ -176,6 +198,7 @@ a, a:hover {
       width: 100%;
     }
 
+    /* Styling for pseudo-element before media query */
     .media.postcard__text:before {
       content: "";
       position: absolute;
@@ -186,10 +209,12 @@ a, a:hover {
       width: 55px;
     }
 
+    /* Hover effect for postcard image */
     &:hover .postcard__img {
       transform: scale(1.1);
     }
 
+    /* Alternating direction for postcards */
     &:nth-child(2n+1) {
       flex-direction: row;
     }
@@ -198,6 +223,7 @@ a, a:hover {
       flex-direction: row-reverse;
     }
 
+    /* Styling for pseudo-element before even/odd postcards */
     &:nth-child(2n+1) .postcard__text::before {
       left: -12px !important;
       transform: rotate(4deg);
@@ -209,6 +235,8 @@ a, a:hover {
     }
   }
 }
+
+/* Media query for even larger screens */
 @media screen and (min-width: 1024px){
 		.postcard__text {
       padding: 2rem 3.5rem;
@@ -224,11 +252,14 @@ a, a:hover {
       width: 55px;
     }
 	
+  /* Dark mode background for postcard in dark mode */
   .postcard.dark {
 		.postcard__text:before {
 			background: #18151f;
 		}
   }
+
+  /* Light mode background for postcard in light mode */
 	.postcard.light {
 		.postcard__text:before {
 			background: #e1e5ea;
@@ -236,7 +267,7 @@ a, a:hover {
   }
 }
 
-/* COLORS */
+/* Color variations for postcard tags */
 .postcard .postcard__tagbox .green.play:hover {
 	background: $main-green;
 	color: black;
@@ -258,6 +289,7 @@ a, a:hover {
 	background-image: linear-gradient(30deg, $main-green-rgb-015, transparent 50%);
 }
 
+/* More color variations for postcard tags */
 .postcard .postcard__tagbox .blue.play:hover {
 	background: $main-blue;
 }
@@ -274,6 +306,7 @@ a, a:hover {
 	background-image: linear-gradient(30deg, $main-blue-rgb-015, transparent 50%);
 }
 
+/* Even more color variations for postcard tags */
 .postcard .postcard__tagbox .red.play:hover {
 	background: $main-red;
 }
@@ -290,6 +323,7 @@ a, a:hover {
 	background-image: linear-gradient(30deg, $main-red-rgb-015, transparent 50%);
 }
 
+/* And even more color variations for postcard tags */
 .postcard .postcard__tagbox .yellow.play:hover {
 	background: $main-yellow;
 	color: black;
@@ -315,7 +349,9 @@ a, a:hover {
 	);
 }
 
+/* Additional media query for even larger screens */
 @media screen and (min-width: 769px) {
+	/* More styling for pseudo-elements before media query */
 	.green::before {
 		background-image: linear-gradient(
 			-80deg,
@@ -331,6 +367,7 @@ a, a:hover {
 		);
 	}
 
+	/* Even more styling for pseudo-elements before media query */
 	.blue::before {
 		background-image: linear-gradient(
 			-80deg,
@@ -342,6 +379,7 @@ a, a:hover {
 		background-image: linear-gradient(80deg, $main-blue-rgb-015, transparent 50%);
 	}
 
+	/* And even more styling for pseudo-elements before media query */
 	.red::before {
 		background-image: linear-gradient(-80deg, $main-red-rgb-015, transparent 50%);
 	}
@@ -349,6 +387,7 @@ a, a:hover {
 		background-image: linear-gradient(80deg, $main-red-rgb-015, transparent 50%);
 	}
 	
+	/* Yet even more styling for pseudo-elements before media query */
 	.yellow::before {
 		background-image: linear-gradient(
 			-80deg,
